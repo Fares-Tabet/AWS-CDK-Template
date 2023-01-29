@@ -1,4 +1,5 @@
 import * as cdk from 'aws-cdk-lib';
+import { Function, Runtime } from 'aws-cdk-lib/aws-lambda';
 import { Construct } from 'constructs';
 // import * as sqs from 'aws-cdk-lib/aws-sqs';
 
@@ -6,11 +7,9 @@ export class FaresCdkStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
+    // const lambda= new Function(this, 'lambda', {
+    //   runtime: Runtime.JAVA_11,
 
-    // example resource
-    // const queue = new sqs.Queue(this, 'FaresCdkQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
+    // })
   }
 }
